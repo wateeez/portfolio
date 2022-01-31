@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <main class="container">
+        <div class="row">
+        <div class="starter-template mt-5 col-lg-12" align-text ="center">
+        <form th:action="@{/home}" th:object = "${gameofthrones}" method="POST"    enctype="multipart/form-data">
+        
+                            
+                                <div class = "form-group" >
+                               
+                                    <label> Image </label> 
+                                    <input
+                                    type = "file"
+                                    name = "fileImage"
+                                    class = "form-control"
+                                    id = "fileImage"
+                                    accept="image/png, image/jpeg"
+                                    /> 
+                                   <br/>
+                            
+                                   
+        <a class="nav-link" th:href="got-images+'/'+${id} + '/' + ${image}">LINK TEST</a>
+                                </div>
+        
+            
+
+
+
+    </html>
